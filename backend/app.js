@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const path = require("path");
 
 dotenv.config();
 
@@ -20,6 +21,9 @@ const userRoutes = require("./routes/userRoutes");
 
 app.use("/api/articles", articleRoutes);
 app.use("/api/users", userRoutes);
+
+// Serve static files
+app.use(express.static(path.join(__dirname, "public")));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
