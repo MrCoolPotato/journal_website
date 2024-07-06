@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const urlParams = new URLSearchParams(window.location.search);
   const articleId = urlParams.get("id");
-
   const res = await fetch(`/api/articles/${articleId}`);
   const article = await res.json();
 

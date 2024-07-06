@@ -3,17 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Panel</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Journal Website - Admin</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Admin Panel</h1>
-    <form id="article-form">
-      <input type="text" id="title" placeholder="Title" required />
-      <textarea id="content" placeholder="Content" required></textarea>
-      <input type="text" id="author" placeholder="Author" required />
-      <button type="submit">Save Article</button>
-    </form>
-    <script src="/js/admin.js"></script>
+    <header>
+      <h1>Admin Panel</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin.html">Admin Panel</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Create a New Article</h2>
+        <form id="article-form">
+          <input type="text" id="title" placeholder="Title" required />
+          <textarea id="content" placeholder="Content" required></textarea>
+          <input type="text" id="author" placeholder="Author" required />
+          <button type="submit">Save Article</button>
+        </form>
+      </section>
+    </main>
+    <script src="js/admin.js"></script>
   </body>
 </html>

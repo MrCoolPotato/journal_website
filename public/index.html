@@ -3,12 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Journal Website</title>
-    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Journal Website - Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <h1>Welcome to the Journal Website</h1>
-    <ul id="articles"></ul>
-    <script src="/js/main.js"></script>
+    <header>
+      <h1>Journal Website</h1>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/admin.html">Admin Panel</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="articles">
+        <h2>Latest Articles</h2>
+        <div id="articles-container" class="grid"></div>
+      </section>
+    </main>
+    <script src="js/main.js"></script>
   </body>
 </html>
