@@ -4,24 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Journal Website - Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
-    <header>
-      <h1>Journal Website</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/admin.html">Admin Panel</a></li>
-        </ul>
-      </nav>
+  <body id="page">
+    <header id="masthead">
+      <div class="site-branding">
+        <h1>Journal Website</h1>
+        <nav id="site-navigation">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/admin.html">Admin Panel</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="articles">
-        <h2>Latest Articles</h2>
-        <div id="articles-container" class="grid"></div>
+      <section class="news-ticker">
+        <div class="ticker">
+          <span>Breaking News:</span>
+          <marquee>Preparations You Make Before Travel</marquee>
+        </div>
+      </section>
+      <section class="articles-layout">
+        <div id="latest-article" class="article latest-article">
+          <!-- Latest article will be dynamically loaded here -->
+        </div>
+        <div id="other-articles" class="other-articles">
+          <!-- Other articles will be dynamically loaded here -->
+        </div>
       </section>
     </main>
+    <footer>
+      <p>&copy; 2023 Journal Website</p>
+    </footer>
     <script src="js/main.js"></script>
   </body>
 </html>
