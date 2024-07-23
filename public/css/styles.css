@@ -72,23 +72,32 @@ main {
   margin-right: 10px;
 }
 
-.articles-layout {
+.featured-articles {
   display: flex;
   width: 100%;
   gap: 20px;
 }
 
-.latest-article {
-  flex: 3; /* Double the width */
+.main-article {
+  flex: 2;
   border: 4px solid #000;
   background-color: #fff;
   padding: 20px;
 }
 
+.main-article img {
+  width: 100%;
+  height: auto;
+}
+
+.article-content {
+  padding: 10px 0;
+}
+
 .other-articles {
-  flex: 4; /* Adjust the width */
+  flex: 3;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   overflow-y: auto;
   max-height: 800px;
@@ -98,6 +107,11 @@ main {
   border: 4px solid #000;
   background-color: #fff;
   padding: 20px;
+}
+
+.article img {
+  width: 100%;
+  height: auto;
 }
 
 footer {
